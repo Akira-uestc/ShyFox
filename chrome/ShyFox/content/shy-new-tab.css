@@ -110,9 +110,13 @@ Styles for new tab
   /* wallpaper */
   body{
     background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
+    background-position: center center!important;
+    background-size: 788px 833px !important;
     background-attachment: fixed !important;
+  }
+
+  .logo-and-wordmark {
+    display: none !important;
   }
   
   /* dark wallpaper */

@@ -237,7 +237,7 @@ Navigation bar on top of the window
   
   /* hotfix */
   #urlbar{
-    visibility: collapse;
+      opacity 0;
   }
 
   #urlbar-container::before {
@@ -263,9 +263,8 @@ Navigation bar on top of the window
       
       /* hotfix */
       #urlbar{
-        visibility: visible !important;
-        /* transition: visibility 0s linear var(--trans-dur); */
-        transition: var(--transition) !important;
+          opacity: 100 !important;
+          transition: all 0s linear var(--trans-dur);
         min-width: var(--urlbar-width) !important;
       }
 
