@@ -238,7 +238,8 @@ Navigation bar on top of the window
   /* hotfix */
   #urlbar{
       opacity 0;
-      transition: var(--trans-dur);
+      /* transition: var(--trans-dur); */
+      transition: var(--transition);
   }
 
   #urlbar-container::before {
@@ -265,7 +266,7 @@ Navigation bar on top of the window
       /* hotfix */
       #urlbar{
           opacity: 100 !important;
-        min-width: var(--urlbar-width) !important;
+          min-width: var(--urlbar-width) !important;
       }
 
       
@@ -332,3 +333,11 @@ Navigation bar on top of the window
   
   #urlbar-background, #searchbar {background-color: var(--tb-col) !important;}
 }
+
+@media screen {
+  #urlbar {
+    position: absolute !important;
+    opacity: 0 !important;
+  }
+}
+
